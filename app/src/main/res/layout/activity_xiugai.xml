@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="病人信息"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="@drawable/textview_background"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/inf"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@drawable/textview_background2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日信息录入"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收缩压："
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/blood_p1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_background" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="舒张压："
+            android:textSize="18dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/blood_p2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_background" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体温："
+            android:textSize="18dp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/temp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_background" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排泄次数："
+            android:textColor="#000000"
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/defecation"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_background"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进食情况  "
+            android:textSize="18dp"
+            android:textColor="#000000"
+
+            android:layout_marginTop="10dp"/>
+        <RatingBar
+            android:id="@+id/diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="睡眠质量  "
+            android:textSize="18dp"
+            android:textColor="#000000"
+
+            android:layout_marginTop="10dp"/>
+        <RatingBar
+            android:id="@+id/slumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他备注  "
+            android:textSize="18dp"
+            android:textColor="#000000"
+
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/otherinf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bottom_background"/>
+    </LinearLayout>     <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginTop="45dp">
+    <Button
+        android:id="@+id/today_inf"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="修改"
+        android:textColor="#707070"
+        android:onClick="xiugai"
+        android:layout_gravity="center"
+        android:background="@drawable/queding_background"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:text="返回"
+        android:textColor="#707070"
+        android:onClick="returnto"
+        android:layout_gravity="center"
+        android:background="@drawable/fanhui_background"/>
+</LinearLayout>
+    <include layout="@layout/bottom" />   </LinearLayout>

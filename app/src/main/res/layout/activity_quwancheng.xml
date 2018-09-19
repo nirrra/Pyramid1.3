@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".List.quwanchengActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_background">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="待完成列表"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:divider="@null"
+        android:id="@+id/listview1">
+    </ListView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/textview_background"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="已完成列表" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:id="@+id/listview2"
+        android:divider="@null">
+    </ListView>
+
+
+    <include layout="@layout/bottom" />
+
+</LinearLayout>

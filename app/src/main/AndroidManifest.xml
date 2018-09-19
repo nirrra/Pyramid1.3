@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tangjibin.pyramid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main.homeActivity" />
+        <activity android:name=".List.quwanchengActivity" />
+        <activity android:name=".Main.oldimformationActivity" />
+        <activity android:name=".Main.QrActivity" />
+        <activity android:name=".older.older" />
+        <activity android:name=".Main.luru" />
+        <activity android:name=".List.User" />
+        <activity android:name=".List.UserAdapter" />
+        <activity android:name=".bottom" />
+        <activity android:name=".Doctor.yuyue" />
+        <activity android:name=".Tips.Tips" />
+        <activity android:name=".xiugai.olderimformationActivity2" />
+        <activity android:name=".xiugai.xiugai" />
+        <activity android:name=".xiugai.onedata" />
+        <activity android:name=".judge" />
+        <activity android:name=".Doctor.Doctorimformation" />
+        <activity android:name=".Doctor.Doctor" />
+        <activity android:name=".Doctor.DoctorAdapter" />
+        <activity android:name=".Doctor.Doctorinfo" />
+        <activity android:name=".yuyueinfo" />
+        <activity android:name=".chakanyuyue.yuyuelist" />
+        <activity android:name=".chakanyuyue.YuyueAdapter" />
+        <activity android:name=".chakanyuyue.Yuyueinfo" />
+        <activity android:name=".chakanyuyue.chakanName" />
+        <activity android:name=".quxiaoyuyue" />
+        <activity android:name=".Tips.TipsAdapter" />
+        <activity android:name=".Tips.info" />
+        <activity android:name=".yuyue.yuyue2" />
+        <activity android:name=".yuyue.querenyuyue"></activity>
+    </application>
+
+</manifest>
